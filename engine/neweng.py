@@ -138,7 +138,8 @@ class FaceDetectionSystem:
                 label = f"{name} ({score:.2f})"
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.putText(frame, label, (x1, y1 - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+                print(f"name : {name}")
 
         # Display FPS
         cv2.putText(frame, f"FPS: {fps:.1f}", (10, 30),
@@ -148,8 +149,8 @@ class FaceDetectionSystem:
 
 def main():
     # Paths
-    # video_source = "rtsp://192.168.1.164:554/stream"
-    video_source = 0
+    video_source = "rtsp://192.168.1.7:554/stream"
+    # video_source = 0
     model_path = "yolov8n-face.pt"
     feature_path = "./datasets/face_features/feature"
     arcface_model_path = "./face_recognition/arcface/weights/arcface_r100.pth"
