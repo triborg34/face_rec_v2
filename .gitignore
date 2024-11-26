@@ -1,0 +1,5 @@
+engine/face_recognition/arcface/weights/arcface_r100.pth
+engine/face_detection/scrfd/weights/scrfd_2.5g_bnkps.onnx
+engine/face_detection/yolov5_face/weights/yolov5m-face.pt
+engine/face_detection/yolov5_face/weights/yolov5n-face.pt
+engine/yolov8n-face.pt
