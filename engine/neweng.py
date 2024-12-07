@@ -149,8 +149,8 @@ class FaceDetectionSystem:
 
 def main():
     # Paths
-    video_source = "rtsp://192.168.1.7:554/stream"
-    # video_source = 0
+    # video_source = "rtsp://192.168.1.7:554/stream"
+    video_source = 0
     model_path = "yolov8n-face.pt"
     feature_path = "./datasets/face_features/feature"
     arcface_model_path = "./face_recognition/arcface/weights/arcface_r100.pth"
